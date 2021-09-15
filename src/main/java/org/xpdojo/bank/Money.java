@@ -21,11 +21,18 @@ public class Money {
         return Objects.hash(amount);
     }
 
-    public final int amount;
+    public int getAmount() {
+        return amount;
+    }
+
+    private int amount;
 
     public Money(int i) {
         amount = i;
     }
 
+    public void add(int i) {
+        amount = amount + i;
+    }
 
 }
