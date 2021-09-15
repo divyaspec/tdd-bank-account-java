@@ -17,6 +17,9 @@ public class Account {
     }
 
     public void withdraw(Integer i) {
+        if (balance < i) {
+            throw new IllegalArgumentException("balance is low");
+        }
         balance = balance - i;
     }
 }

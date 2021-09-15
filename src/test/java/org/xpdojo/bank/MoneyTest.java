@@ -9,6 +9,7 @@ public class MoneyTest {
     @Test
     public void canCreateMoney() {
         Money money = new Money(10);
-        assertThat(money.getAmount()).isEqualTo(10);
+        assertThat(money.amount).isEqualTo(10);
     }
+
 }
