@@ -20,4 +20,12 @@ public class AccountTest {
 
         assertThat(account.balance()).isEqualTo(400);
     }
+
+    @Test
+    public void shouldWithdrawMoneyFromAccount() {
+        Account account = new Account(500);
+
+        account.withdraw(300);
+        assertThat(account.balance).isEqualTo(200);
+    }
 }

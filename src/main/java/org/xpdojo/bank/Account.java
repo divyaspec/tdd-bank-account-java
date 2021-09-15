@@ -2,14 +2,6 @@ package org.xpdojo.bank;
 
 public class Account {
 
-    public Integer getBalance() {
-        return balance;
-    }
-
-    public void setBalance(Integer balance) {
-        this.balance = balance;
-    }
-
     public Account(Integer balance) {
         this.balance = balance;
     }
@@ -22,5 +14,9 @@ public class Account {
 
     public Integer balance() {
         return balance;
+    }
+
+    public void withdraw(Integer i) {
+        balance = balance - i;
     }
 }
